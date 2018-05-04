@@ -9,7 +9,7 @@ resource "aws_security_group" "security_group_a" {
     to_port   = 22
     protocol  = "tcp"
     self      = "true"
-    cidr_blocks = ["${var.myip}/32"]
+    cidr_blocks = ["${var.myip}/32", "${var.subnet_b_cidr}", "${var.subnet_c_cidr}"]
   }
 
   egress {

@@ -9,7 +9,7 @@ resource "aws_security_group" "security_group_b" {
     to_port   = 22
     protocol  = "tcp"
     self      = "true"
-    cidr_blocks = ["${var.subnet_a_cidr}"]
+    cidr_blocks = ["${var.subnet_a_cidr}", "${var.subnet_c_cidr}"]
     #security_groups = ["${aws_security_group.security_group_a.id}"]
   }
 
