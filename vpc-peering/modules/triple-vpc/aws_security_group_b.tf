@@ -10,7 +10,7 @@ resource "aws_security_group" "security_group_b" {
     protocol  = "tcp"
     self      = "true"
     cidr_blocks = ["${var.subnet_a_cidr}"]
-    security_groups = ["${aws_security_group.security_group_a.id}"]
+    #security_groups = ["${aws_security_group.security_group_a.id}"]
   }
 
   egress {

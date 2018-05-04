@@ -6,6 +6,11 @@ resource "aws_route_table" "rt_a" {
     gateway_id = "${aws_internet_gateway.gw_a.id}"
   }
 
+  route {
+    cidr_block = "${var.vpc_b_cidr}"
+    vpc_peering_connection_id = "${aws_vpc_peering_connection.a_to_b.id}"
+  }
+
   tags {
     Name = "route table A"
   }
