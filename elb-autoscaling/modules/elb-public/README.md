@@ -4,4 +4,4 @@
 * spans 3 availability zones
 * public subnet in each AZ
 * AG launches instance in each AZ
-* each instance launches Nginx docker image with index.html and health check page
+* each instance launches Nginx docker image with index.html and health check page: https://hub.docker.com/r/timwebster9/nginx-aws/
