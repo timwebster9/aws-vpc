@@ -1,0 +1,17 @@
+module "elb-public" {
+    source                = "../../modules/elb-public"
+    availability_zone_a   = "${var.availability_zone_a}"
+    availability_zone_b   = "${var.availability_zone_b}"
+    availability_zone_c   = "${var.availability_zone_c}"
+    vpc_cidr              = "${var.vpc_cidr}"
+    subnet_a_cidr         = "${var.subnet_a_cidr}"
+    subnet_b_cidr         = "${var.subnet_b_cidr}"
+    subnet_c_cidr         = "${var.subnet_c_cidr}"
+    ami_name              = "${var.ami_name}"
+    ami_owner             = "${var.ami_owner}"
+    instance_type         = "${var.instance_type}"
+    keypair_name          = "${var.keypair_name}"
+    myip                  = "${local.myip}"
+    lb_name_prefix        = "${var.lb_name_prefix}"
+    assign_public_ip      = "${var.assign_public_ip}"
+}
