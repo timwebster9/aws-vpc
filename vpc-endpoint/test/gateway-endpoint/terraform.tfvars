@@ -1,0 +1,8 @@
+availability_zone   = "eu-west-2a"
+vpc_cidr            = "10.0.0.0/16"
+subnet_public_cidr  = "10.0.1.0/24"
+subnet_private_cidr = "10.0.2.0/24"
+ami_name            = "ubuntu-docker-base*"
+ami_owner           = "916524401246"
+key_name            = "timw-contino-eu-west-2"
+instance_type       = "t2.micro"
