@@ -6,3 +6,4 @@
 * ASG launches instance in each AZ
 * each instance launches Nginx docker image with index.html and health check page: https://hub.docker.com/r/timwebster9/nginx-aws/
 * ASG has ELB health check type
+* Target Tracking Autoscaling policy for ALB
