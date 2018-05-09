@@ -11,6 +11,11 @@ variable "instance_type" {}
 variable "keypair_name" {}
 variable "lb_name_prefix" {}
 variable "assign_public_ip" {}
+variable "min_size" {}
+variable "max_size" {}
+variable "desired_capacity" {}
+variable "health_check_type" {}
+variable "health_check_grace_period" {}
 variable "region" {
   default     = "eu-west-2"
 }
